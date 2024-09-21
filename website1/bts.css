@@ -1,0 +1,18 @@
+.behindthescenes{
+    float: right;
+    width: 30%;
+}
+
+.behindthescenes2{
+    float: left;
+    width: 30%;
+}
+
+.pos_cen{
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    top: 20%;
+    background-color: #623e31;
+    padding: 30px;
+}

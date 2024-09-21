@@ -2,6 +2,7 @@
 <head>
     <title> TMG - Home Page </title>
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="aboutstyle.css">
 </head>
 <body>
     <a href="index.html"><img src="logo.png" align="middle"  alt-text="logo"></a> <img src="text.png" align="center" alt-text="the memory garden"> 
@@ -11,24 +12,29 @@
     <button type="button" onclick="location.href='inspo.html'">  INSPO + MOODBOARDS </button> &nbsp; &nbsp;
     <button type="button" onclick="location.href='about.html'"> ABOUT THE PEOPLE </button>
     <hr align="center" width="100%" size="3" color="black">
-    <img src="liya.jpg" style="float:left" align="middle"> <h2 align="right"> Liya Rafeeq </h2> <br>
-    <p align="right"> Liya Rafeeq is a first-year student at NYU Abu Dhabi. <br>
-        She plans to major in Interactive Media and minor in design and <br>
-        psychology. Liya loves to create art, read thrillers and mysteries <br>
-        and loves to bake and create chocolate confections! She hopes to <br>
-        work in the field of design and animation, whilst also exploring her <br>
-        love for baking, fashion and branding. She dreams to open her very own <br>
-        business one day!
-    </p>
-    <button type="button" onclick="location.href='liyacontact.html'"> contact </button>
-    <br><br><br></br><br><br><br></br><br><br><br></br>
-    <img src="liya.jpg" style="float:right" align="middle"> <h2 align="left"> Ziya Vhora </h2> <br>
-    <p align="left"> Ziya Vhora is a ___________ at NYU Abu Dhabi. <br>
-        She plans to major _______________________________________<br>
-        ___________________________________________________________<br>
-        _________________________________________________________<br>
-        _________________________________________________________
-    </p>
-    <button type="button" onclick="location.href='ziyacontact.html'"> contact </button>
-</body>
+
+    <div class="person" style="--color: #782a2b">
+        <div class="container">
+          <div class="contianer-inner">
+            <div class="circle"></div>
+            <a href="liyacontact.html"><img src="liya.jpg"></a>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <h1>Liya Rafeeq</h1>
+        <p>NYUAD'28</p>
+    </div>
+    
+    <div class="person" style="--color: #37375e">
+        <div class="container">
+          <div class="contianer-inner">
+            <div class="circle"></div>
+            <a href="ziyacontact.html"><img src="ziya.jpg"></a>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <h1>Ziya Vhora</h1>
+        <p>NYUAD'27</p>
+    </div>
+
 </html>

@@ -47,7 +47,7 @@ h6, p {
       content: "";
       width: 37vw;
       height: 38vw;
-      background-image: url(outside.jpg);
+      background-image: url(runway.jpg);
   }
   
   
@@ -84,7 +84,7 @@ h6, p {
       content: "";
       width: 65vw;
       height: 39vw;
-      background-image: url(frontfar.jpg);
+      background-image: url(vibe.jpg);
   }
   
   .c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) {
@@ -154,7 +154,7 @@ h6, p {
       background-size: cover;
       transform: rotateZ(-45deg);
       content: "";
-      background-image: url(sideview.jpg);
+      background-image: url(ralph.jpg);
   }
   
   .c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(3) {
@@ -178,6 +178,6 @@ h6, p {
       background-size: cover;
       transform: rotateZ(-45deg);
       content: "";
-      background-image: url(closeup.jpg);
+      background-image: url(mood.jpg);
   }
   

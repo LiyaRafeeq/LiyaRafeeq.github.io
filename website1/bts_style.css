@@ -1,0 +1,56 @@
+
+.cd__main{
+    max-width: 720px !important;
+}
+
+.photos
+{
+	       max-width: 220px;
+               height: 220px;
+}
+
+.image-left, .image-right
+{
+	margin: 3em 0;
+}
+
+@media (min-width: 20em)
+{
+	.image-left, .image-right
+	{
+		display: flex;
+		align-items: center;
+		background-color: #623e31;
+	}
+
+	.image-left img
+	{
+
+		margin-right: 50em;
+		float: left; /* fallback */
+	}
+
+	.image-right img
+	{
+		order: 1;
+		margin-left: 50em;
+		float: right; /* fallback */
+	}
+	
+	/* clearfix for fallback */
+	.image-left::after,
+	.image-right::after
+	{
+		content: "";
+  	display: block;
+		clear: both;
+	}
+}
+
+@media (min-width: 30em)
+{
+	.image-left img, .image-right img
+	{
+		flex-shrink: 0;
+	}
+}
