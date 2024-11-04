@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Anton SC";
+    font-family: anton-sc;
     letter-spacing: 1px;
     transition: all 0.35s linear;
 }
