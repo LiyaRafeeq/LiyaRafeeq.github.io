@@ -4,24 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    
+    <!-- Remix Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="style.css">
 
+    <!-- Additional Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+    
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"  crossorigin="anonymous"/>
-  <link rel="stylesheet" href="../res/fontawesome/css/all.css" />
-  <link rel="stylesheet" href="audio.css" />
+    
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../res/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="audio.css" />
 
     <title>Vault of Secrets</title>
 </head>
 
 <body>
     <div id="main">
+
+        <!--Money Falling Animation-->
         <div class="one">
-            <h1>Vault of Secrets</h1>
+            <h1>   VAULT OF SECRETS   </h1>
             <img id="roll1" src="roll1.png" alt="roll of bill">
             <img id="susdude" src="main.png" alt="suspicious dude">
             <img id="bill5" src="bill2.png" alt="bill">
@@ -37,8 +51,10 @@
                         transform="translate(100 100)" />
                 </svg>
             </div>
+
+            <!--Introduction to the Podcast-->
             <div class="rght-two">
-                <h1>Vault of Secrets</h1>
+                <h1>VAULT OF SECRETS</h1>
                 <p>Welcome to the Vault of Secrets, where we bring you stories of the biggest mysteries around the world. 
                     Today we are travelling to Brazil, where we are going to explore one of their biggest heist mysteries-
                     The Banco Central Heist. Three months of tunneling, a fake landscaping business, lavish spendings around, 
@@ -46,9 +62,11 @@
                 </p>
             </div>
         </div>
+
+        <!--Podcast Section and Controls-->
         <div class="three">
             <p> <img data-aos="fade-down-left" data-aos-duration="2000" src="footer1-removebg-preview.png" style="margin-top: -230px; width: 1000px;" alt=""> </p>
-    <audio id="player" src="audioupdate.mp3"> </audio>
+                <audio id="player" src="audioupdate.mp3"> </audio>
     <div class="player">
       <div class="control">
         <i class="fas fa-play" id="playbtn"></i>
@@ -64,19 +82,29 @@
         </div>
     </div>
 
+    <!--Custom JavaScript files-->
+
+    <!--For Audio Control-->
     <script src="audio.js"></script>
 
+    <!--For Falling Animation Control-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
         integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
         integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script>
         AOS.init();
     </script>
+
     <script src="script.js"></script>
+
 </body>
 </html>
