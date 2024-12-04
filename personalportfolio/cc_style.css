@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(66, 4, 4);
+}
+
+@font-face {
+  font-family: 'TAN MERINGUE';
+  src: url('fonts/TAN MERINGUE.otf') format('opentype'),
+       url('fonts/TAN MERINGUE.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  color: #fff;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.nav-button {
+  background-color: #573918;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-family: 'TAN MERINGUE';
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #444444;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left-section,
+.right-section {
+  padding: 20px;
+}
+
+.left-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin: 0;
+  font-size: 41px;
+  text-align: left;
+  color:#fff;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-picture {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.follow-btn {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.right-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .left-section,
+  .right-section {
+    flex: none;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .vertical-text {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-picture {
+    width: 40px;
+    height: 40px;
+  }
+
+  .follow-btn {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .vertical-text {
+    font-size: 16px;
+    writing-mode: horizontal-tb;
+    transform: none;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .profile-btn {
+    font-size: 10px;
+  }
+}

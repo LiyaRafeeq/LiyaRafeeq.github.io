@@ -1,0 +1,163 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  min-height: 100vh;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'AstonScript';
+  src: url('fonts/AstonScript.ttf') format('truetype'),
+       url('fonts/AstonScript.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TAN MERINGUE';
+  src: url('fonts/TAN MERINGUE.otf') format('opentype'),
+       url('fonts/TAN MERINGUE.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.tan-font {
+  font-family: 'TAN MERINGUE';
+}
+
+.intro-text {
+  font-family: 'TAN MERINGUE';
+  text-align: left;
+  margin-top: 20px;
+  font-size: 16px;
+  width: 90%;
+}
+
+/* Header */
+header {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.nav-button {
+  background-color: #573918;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-family: 'TAN MERINGUE';
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #444444;
+}
+
+/* Main Content */
+main {
+  display: flex;
+  flex-direction: row; /* Side-by-side layout for main content */
+  width: 90%;
+  max-width: 1200px;
+  justify-content: space-between; /* Spread the heading and models apart */
+}
+
+h1 {
+  font-size: 4vw; /* Scales for smaller screens */
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+/* Ensure headings are in the same line */
+.heading-container {
+  display: flex;
+  flex-direction: row; /* Align headings side by side */
+  justify-content: center; /* Center the headings */
+  gap: 10px; /* Space between the headings */
+  margin-bottom: 10px; /* Add space below the headings */
+}
+
+.models {
+  display: flex; /* Change to flex for row layout */
+  gap: 20px; /* Gap between each column */
+  width: 100%; /* Ensure the models take the full width available */
+  justify-content: space-between; /* Distribute models evenly */
+}
+
+.model {
+  width: 22%; /* Set each column to take 22% of the container's width */
+  height: auto;
+  aspect-ratio: 2 / 3;
+  border: 2px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.model:hover {
+  transform: scale(1.1);
+}
+
+.animation img {
+  width: 100%;
+  height: auto;
+}
+
+.animation p {
+  font-size: 1vw; /* Scales for smaller screens */
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) { /* For tablets */
+  h1 {
+    font-size: 4vw;
+  }
+
+  .nav-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .animation p {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 480px) { /* For mobile phones */
+  h1 {
+    font-size: 10vw;
+  }
+
+  .nav-button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .animation p {
+    font-size: 2vw;
+  }
+
+  .models {
+    gap: 15px;
+    width: 100%; /* Models take full width on small screens */
+  }
+
+  .model {
+    width: 45%; /* Models take up more space on mobile */
+  }
+}
