@@ -34,7 +34,7 @@ body {
   font-family: 'TAN MERINGUE';
 }
 
-.intro-text {
+p {
   font-family: 'TAN MERINGUE';
   text-align: left;
   margin-top: 20px;
@@ -99,6 +99,7 @@ h1 {
   height: auto;
   aspect-ratio: 2 / 3;
   border: 2px solid #ffffff;
+  background-color: #553926;
   display: flex;
   flex-direction: column;
   justify-content: center;
