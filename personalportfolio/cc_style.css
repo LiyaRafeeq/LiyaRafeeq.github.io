@@ -1,12 +1,7 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: rgb(66, 4, 4);
+header{
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
 }
 
 @font-face {
@@ -16,12 +11,6 @@ body {
   font-weight: normal;
   font-style: normal;
   color: #fff;
-}
-
-header {
-  width: 100%;
-  text-align: center;
-  margin: 20px 0;
 }
 
 .nav-button {
@@ -37,6 +26,7 @@ header {
 .nav-button:hover {
   background-color: #444444;
 }
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -54,21 +44,21 @@ header {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .vertical-text {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  margin: 0;
+  margin: 2px;
   font-size: 41px;
-  text-align: left;
+  text-align: center;
   color:#fff;
 }
 
 .description {
   font-size: 14px;
   line-height: 1.6;
+  color: #fff;
 }
 
 .profile {
@@ -86,7 +76,7 @@ header {
 
 .follow-btn {
   padding: 10px 20px;
-  background-color: black;
+  background-color: #573918;
   color: white;
   border: none;
   cursor: pointer;
@@ -154,4 +144,29 @@ header {
   .profile-btn {
     font-size: 10px;
   }
+}
+
+.model {
+  width: 22%; /* Set each column to take 22% of the container's width */
+  height: auto;
+  aspect-ratio: 2 / 3;
+  border: 2px solid #ffffff;
+  background-color: #553926;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.animation img {
+  width: 100%;
+  height: auto;
+}
+
+.animation p {
+  font-size: 1vw; /* Scales for smaller screens */
+  margin: 10px 0;
+  text-align: center;
 }

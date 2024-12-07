@@ -65,22 +65,69 @@ h2 {
     margin-bottom: 10px;
 }
 
-.image-box {
-    width: 100%;
-    height: 150px;
-    background-color: #ddd;
-    margin-bottom: 20px;
+.single-skill{
     position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+    margin-bottom: 2rem;
 }
 
-.image-box::before {
-    content: "Image placeholder";
+.topic{
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'TAN MERINGUE';
+    font-weight: 500;
+}
+
+.bar{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1rem;
-    color: #555;
+    bottom: -.75rem;
+    height: .25rem;
+    background-color: #f3e5d6;
+}
+
+.bar-1{
+    width: 95%;
+}
+
+.bar-2{
+    width: 95%;
+}
+
+.bar-3{
+    width: 75%;
+}
+
+.bar-4{
+    width: 95%;
+}
+
+.bar-5{
+    width: 80%;
+}
+
+.bar-6{
+    width: 95%;
+}
+
+.bar-7{
+    width: 90%;
+}
+.bar-8{
+    width: 75%;
+}
+
+.bar-9{
+    width: 70%;
+}
+
+.bar-10{
+    width: 95%;
 }
 
 p {

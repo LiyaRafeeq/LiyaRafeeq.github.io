@@ -1,0 +1,77 @@
+
+header {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+  
+.nav-button {
+    background-color: #573918;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'TAN MERINGUE';
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+.nav-button:hover {
+    background-color: #5a230a;
+}
+
+@font-face {
+    font-family: 'AstonScript';
+    src: url('fonts/AstonScript.ttf') format('truetype'),
+         url('fonts/AstonScript.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'TAN MERINGUE';
+    src: url('fonts/TAN MERINGUE.otf') format('opentype'),
+         url('fonts/TAN MERINGUE.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+.tan-font {
+    font-family: 'TAN MERINGUE';
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin: 0;
+    font-size: 41px;
+    text-align: left;
+    color:#fff;
+  }
+  
+  
+.models {
+    display: flex; /* Change to flex for row layout */
+    gap: 20px; /* Gap between each column */
+    width: 100%; /* Ensure the models take the full width available */
+    justify-content: space-between; /* Distribute models evenly */
+  }
+  .animation img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .animation p {
+    font-size: 1vw; /* Scales for smaller screens */
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  @media (max-width: 480px) { /* For mobile phones */
+  
+    .models {
+      gap: 15px;
+      width: 100%; /* Models take full width on small screens */
+    }
+  
+  }
+    
