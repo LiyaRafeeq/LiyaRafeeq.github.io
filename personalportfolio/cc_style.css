@@ -1,16 +1,21 @@
-header{
-  width: 100%;
-  text-align: center;
-  margin: 20px 0;
+/* General Styles */
+body {
+  margin: 0;
+  background-color: #553926;
+  background-image: url("images/im_background.png");
+  background-size: cover;
+  background-repeat: repeat;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@font-face {
-  font-family: 'TAN MERINGUE';
-  src: url('fonts/TAN MERINGUE.otf') format('opentype'),
-       url('fonts/TAN MERINGUE.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  color: #fff;
+header {
+  position: absolute; /* Header at the top */
+  top: 10px;
+  width: 100%;
+  text-align: center;
 }
 
 .nav-button {
@@ -24,149 +29,180 @@ header{
 }
 
 .nav-button:hover {
-  background-color: #444444;
+  background-color: #472e1d;
 }
 
+/* Custom Font */
+@font-face {
+  font-family: 'TAN MERINGUE';
+  src: url('fonts/TAN MERINGUE.otf') format('opentype'),
+       url('fonts/TAN MERINGUE.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Layout Container */
 .container {
   display: flex;
-  flex-wrap: wrap;
-  width: 90%;
+  flex-direction: row; /* Align items side by side */
+  justify-content: space-between;
+  align-items: center;
+  width: 90%; /* Take 90% of the viewport width */
   max-width: 1200px;
-  margin: 0 auto;
+  height: 80%; /* Take 80% of the viewport height */
 }
 
-.left-section,
-.right-section {
-  padding: 20px;
-}
-
-.left-section {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.vertical-text {
+/* Vertical Text Box */
+.text-box {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  margin: 2px;
-  font-size: 41px;
   text-align: center;
-  color:#fff;
-}
-
-.description {
-  font-size: 14px;
-  line-height: 1.6;
+  font-size: 30px; /* Increased font size for visibility */
   color: #fff;
+  font-family: 'TAN MERINGUE';
 }
 
+/* Main Text Section */
+.main-text {
+  flex: 2; /* Occupies more space */
+  background-color: #553926;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  font-family: 'TAN MERINGUE';
+  border-radius: 10px;
+  margin: 0 20px; /* Space between sections */
+}
+
+/* Profile Section */
 .profile {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 
 .profile-picture {
-  width: 50px;
-  height: 50px;
-  background-color: #ccc;
+  width: 70px;
+  height: 70px;
+  background: url("images/pfp.jpg");
   border-radius: 50%;
 }
 
 .follow-btn {
   padding: 10px 20px;
-  background-color: #573918;
+  background-color: #553926;
   color: white;
   border: none;
   cursor: pointer;
   font-size: 14px;
+  border-radius: 5px;
+  margin: 10px;
 }
 
-.right-section {
-  flex: 2;
+.follow-btn:hover {
+  background-color: #472e1d;
+}
+
+/* Account Image Section */
+.account {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Full height of the container */
+  margin-right: 15px;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .left-section,
-  .right-section {
-    flex: none;
-    width: 100%;
-    padding: 10px;
-  }
-
-  .vertical-text {
-    font-size: 20px;
-    text-align: left;
-    margin-bottom: 10px;
-  }
-
-  .description {
-    font-size: 16px;
-  }
-
-  .profile {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .profile-picture {
-    width: 40px;
-    height: 40px;
-  }
-
-  .follow-btn {
-    font-size: 12px;
-    padding: 8px 16px;
-  }
+.account img {
+  height: 100%; /* Fits the screen height */
+  width: auto; /* Maintains aspect ratio */
 }
 
-@media screen and (max-width: 480px) {
-  .vertical-text {
-    font-size: 16px;
-    writing-mode: horizontal-tb;
-    transform: none;
-    text-align: center;
-  }
-
-  .description {
-    font-size: 14px;
-  }
-
-  .profile-btn {
-    font-size: 10px;
-  }
-}
-
+/* GIF Section */
 .model {
-  width: 22%; /* Set each column to take 22% of the container's width */
-  height: auto;
-  aspect-ratio: 2 / 3;
-  border: 2px solid #ffffff;
   background-color: #553926;
+  padding: 10px;
+  border: 2px #4d3113;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
   transition: transform 0.3s ease;
+  height: auto;
+  font-family: 'TAN MERINGUE';
+  color: #fff;
 }
 
-.animation img {
-  width: 100%;
-  height: auto;
+.model img {
+  height: 90%; /* Set the height to 90% of the container's height */
+  max-height: 400px; /* Limit the maximum height (adjustable based on your design) */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+.model:hover {
+  transform: scale(1.05);
 }
 
 .animation p {
-  font-size: 1vw; /* Scales for smaller screens */
-  margin: 10px 0;
+  font-size: 14px;
   text-align: center;
+}
+
+/* Responsive Design */
+
+/* For Tablets */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+  }
+
+  .text-box {
+    writing-mode: horizontal-tb;
+    transform: none;
+    font-size: 24px; /* Slightly smaller on tablets */
+    margin-bottom: 10px;
+  }
+
+  .main-text {
+    margin: 10px 0;
+    width: 100%; /* Full width */
+  }
+
+  .profile-picture {
+    width: 80px;
+    height: 80px;
+  }
+
+  .follow-btn {
+    font-size: 12px;
+  }
+
+  .model img {
+    max-width: 250px;
+  }
+}
+
+/* For Mobile */
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+  }
+
+  .main-text {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .profile-picture {
+    width: 60px;
+    height: 60px;
+  }
+
+  .follow-btn {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
 }
