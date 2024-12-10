@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="who_style.css">
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
-<body background="images/im_background.png">
+<body>
 
   <header>
     <button class="nav-button" onclick="navigate('index.html')">HOME</button>
@@ -15,7 +15,7 @@
   </header>
 
   <div class="main-container">
-    <h1 class="vertical-text" style="font-family: 'TAN MERINGUE';"> "WHO AM I REALLY" LIYA </h1>
+    <h1 class="vertical-text" style="font-family: 'TAN MERINGUE';">   "WHO AM I REALLY" LIYA </h1>
 
     <div class="content-container">
       <!-- Image Boxes -->
@@ -23,13 +23,13 @@
         <div class="box" id="box1" onclick="showDescription(1)">
           <img src="images/folder1.png" alt="Image 1">
           <div class="description" id="desc1">
-            <p> My name is Liya Rafeeq! I'm an 18 year old studying interactive media and visual arts with a minor in design at New York University Abu Dhabi. Originally from India, I was born and brought up in Abu Dhabi, U.A.E.</p>
+            <p>My name is Liya Rafeeq! I'm an 18 year old studying interactive media and visual arts with a minor in design at New York University Abu Dhabi. Originally from India, I was born and brought up in Abu Dhabi, U.A.E.</p>
           </div>
         </div>
         <div class="box" id="box2" onclick="showDescription(2)">
           <img src="images/folder2.png" alt="Image 2">
           <div class="description" id="desc2">
-            <p> I love designing, animation and fashion. This is what prompted me to study IM! These are some sketches and illustrations I made, some for fun, some for small business logos, feel free to check them out!</p>
+            <p>I love designing, animation and fashion. This is what prompted me to study IM! These are some sketches and illustrations I made, some for fun, some for small business logos, feel free to check them out!</p>
           </div>
         </div>
         <div class="box" id="box3" onclick="showDescription(3)">
@@ -41,7 +41,7 @@
         <div class="box" id="box4" onclick="showDescription(4)">
           <img src="images/folder4.png" alt="Image 4">
           <div class="description" id="desc4">
-            <p>This is the description for Box 4.</p>
+            <p>I love to travel, explore new places and meet new people! </p>
           </div>
         </div>
         <div class="box" id="box5" onclick="showDescription(5)">
@@ -58,27 +58,33 @@
         </div>
       </div>
 
+      <p style="font-family: 'TAN MERINGUE'; color:#fff;"> click on the folders to know more about me!
+      </p>
+      <p style="font-family: 'TAN MERINGUE'; color:#fff;"> scroll down to see some of my art projects!
+      </p>
+
       <!-- Scrapbook Images -->
       <div class="scrapbook-images">
-        <div class="scrapbook-image" style="top: 30%; left: 10%;">
+        <div class="scrapbook-image" style="transform: rotate(-10deg); right:10px; ">
           <img src="images/scrapbook1.png" alt="Scrapbook 1">
         </div>
-        <div class="scrapbook-image" style="top: 70%; right: 15%;">
+        <div class="scrapbook-image" style="transform: rotate(15deg); right:210px; ">
           <img src="images/scrapbook2.png" alt="Scrapbook 2">
         </div>
-        <div class="scrapbook-image" style="top: 40%; left: 15%;">
+        <div class="scrapbook-image" style="transform: rotate(-20deg); right:410px; ">
           <img src="images/scrapbook3.png" alt="Scrapbook 3">
         </div>
-        <div class="scrapbook-image" style="top: 50%; right: 25%;">
+        <div class="scrapbook-image" style="transform: rotate(5deg); top:610px; right:210px">
           <img src="images/scrapbook4.png" alt="Scrapbook 4">
         </div>
-        <div class="scrapbook-image" style="top: 70%; right: 15%;">
+        <div class="scrapbook-image" style="transform: rotate(-15deg); top:810px; right: 210px;">
           <img src="images/scrapbook5.png" alt="Scrapbook 5">
         </div>
-        <div class="scrapbook-image" style="top: 40%; left: 15%;">
+        <div class="scrapbook-image" style="transform: rotate(20deg); top:1010px; right:210px;">
           <img src="images/scrapbook6.png" alt="Scrapbook 6">
         </div>
       </div>
+    </div>
 
       <!-- Model -->
       <div class="model">
@@ -87,7 +93,7 @@
           <img src="everything_liya.gif" alt="Liya Rafeeq Animation">
         </div>
       </div>
-    </div>
+
   </div>
 
   <script src="who_script.js"></script>
