@@ -122,12 +122,15 @@ header {
 .scrapbook-images {
   position: relative;
   width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
 .scrapbook-image {
   position: absolute;
-  width: 150px;
-  height: 150px;
+  width: 350px; /* Fixed width */
+  height: 200px; /* Fixed height */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .scrapbook-image img {
@@ -135,9 +138,13 @@ header {
   height: 100%;
   object-fit: cover;
   border: 2px solid #fff;
-  box-shadow: 0 4px 8px rgba(27, 3, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+.scrapbook-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
 
 .box.active .description {
   display: block;
