@@ -5,14 +5,14 @@ body {
   background-image: url("images/im_background.png");
   background-size: cover;
   background-repeat: repeat;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 header {
-  position: absolute; /* Header at the top */
+  position: absolute;
   top: 10px;
   width: 100%;
   text-align: center;
@@ -32,7 +32,6 @@ header {
   background-color: #472e1d;
 }
 
-/* Custom Font */
 @font-face {
   font-family: 'TAN MERINGUE';
   src: url('fonts/TAN MERINGUE.otf') format('opentype'),
@@ -41,40 +40,36 @@ header {
   font-style: normal;
 }
 
-/* Layout Container */
 .container {
   display: flex;
-  flex-direction: row; /* Align items side by side */
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 90%; /* Take 90% of the viewport width */
+  width: 90%;
   max-width: 1200px;
-  height: 80%; /* Take 80% of the viewport height */
+  height: 80%; 
 }
 
-/* Vertical Text Box */
 .text-box {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   text-align: center;
-  font-size: 30px; /* Increased font size for visibility */
+  font-size: 30px; 
   color: #fff;
   font-family: 'TAN MERINGUE';
 }
 
-/* Main Text Section */
 .main-text {
-  flex: 2; /* Occupies more space */
+  flex: 2;
   background-color: #553926;
   padding: 20px;
   color: #fff;
   text-align: center;
   font-family: 'TAN MERINGUE';
   border-radius: 10px;
-  margin: 0 20px; /* Space between sections */
+  margin: 0 20px;
 }
 
-/* Profile Section */
 .profile {
   display: flex;
   flex-direction: column;
@@ -105,21 +100,19 @@ header {
   background-color: #472e1d;
 }
 
-/* Account Image Section */
 .account {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%; /* Full height of the container */
+  height: 100%;
   margin-right: 15px;
 }
 
 .account img {
-  height: 100%; /* Fits the screen height */
-  width: auto; /* Maintains aspect ratio */
+  height: 100%;
+  width: auto;
 }
 
-/* GIF Section */
 .model {
   background-color: #553926;
   padding: 10px;
@@ -135,9 +128,9 @@ header {
 }
 
 .model img {
-  height: 90%; /* Set the height to 90% of the container's height */
-  max-height: 400px; /* Limit the maximum height (adjustable based on your design) */
-  width: auto; /* Maintain the aspect ratio */
+  height: 90%; 
+  max-height: 400px;
+  width: auto;
 }
 
 .model:hover {
@@ -149,25 +142,22 @@ header {
   text-align: center;
 }
 
-/* Responsive Design */
-
-/* For Tablets */
 @media screen and (max-width: 768px) {
   .container {
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column; 
     align-items: center;
   }
 
   .text-box {
     writing-mode: horizontal-tb;
     transform: none;
-    font-size: 24px; /* Slightly smaller on tablets */
+    font-size: 24px;
     margin-bottom: 10px;
   }
 
   .main-text {
     margin: 10px 0;
-    width: 100%; /* Full width */
+    width: 100%;
   }
 
   .profile-picture {
@@ -184,10 +174,9 @@ header {
   }
 }
 
-/* For Mobile */
 @media screen and (max-width: 480px) {
   .container {
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
     align-items: center;
   }
 

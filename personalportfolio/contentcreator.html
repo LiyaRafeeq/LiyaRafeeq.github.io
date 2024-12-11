@@ -12,21 +12,14 @@
   <header>
     <button class="nav-button" onclick="navigate('index.html')">HOME</button>
     <button class="nav-button" onclick="navigate('profile.html')">PROFILE</button>
-    <script>
-      function navigate(url) {
-          window.location.href = url;
-      }
-    </script>
   </header>
 
   <div class="container">
 
-    <!-- Text Box Section -->
     <div class="text-box vertical-text">
       "CONTENT CREATOR" LIYA
     </div>
 
-    <!-- Main Text Section -->
     <div class="main-text">
       <p>
         lee.arch1ve is a safe space I created online, on Instagram. If I were to summarise it,
@@ -38,18 +31,15 @@
       </p>
     </div>
 
-    <!-- Small Image with Button -->
     <div class="small-image">
       <div class="profile-picture"></div>
-      <button class="follow-btn">Follow</button>
+      <button class="follow-btn" onclick="navigate('https://www.instagram.com/lee.arch1ve/')">Follow</button>
     </div>
 
-    <!-- Image Section -->
     <div class="account">
       <img src="images/account.jpg" alt="Account Image">
     </div>
 
-    <!-- GIF Image Section -->
     <div class="model">
       <div class="animation">
         <p>"content creator" liya</p>
@@ -58,5 +48,12 @@
     </div>
 
   </div>
+
+  <script>
+    function navigate(url) {
+        window.location.href = url;
+    }
+  </script>
+  
 </body>
 </html>

@@ -1,4 +1,4 @@
-/* General reset and styling */
+
 * {
   margin: 0;
   padding: 0;
@@ -78,7 +78,6 @@ header {
   gap: 10px;
 }
 
-/* Box Styling */
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -128,8 +127,8 @@ header {
 
 .scrapbook-image {
   position: absolute;
-  width: 350px; /* Fixed width */
-  height: 200px; /* Fixed height */
+  width: 350px; 
+  height: 200px; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -150,7 +149,6 @@ header {
   display: block;
 }
 
-/* Model Styling */
 .model {
   flex: 1;
   background-color: #553926;
@@ -177,7 +175,6 @@ header {
   transform: scale(1.05);
 }
 
-/* Mobile responsiveness */
 @media screen and (max-width: 768px) {
   .main-container {
     flex-direction: column;

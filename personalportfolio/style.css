@@ -34,15 +34,6 @@ body {
   font-family: 'TAN MERINGUE';
 }
 
-p {
-  font-family: 'TAN MERINGUE';
-  text-align: left;
-  margin-top: 20px;
-  font-size: 16px;
-  width: 90%;
-}
-
-/* Header */
 header {
   width: 100%;
   text-align: center;
@@ -60,42 +51,58 @@ header {
 }
 
 .nav-button:hover {
-  background-color: #444444;
+  background-color: #775a3d;
 }
 
-/* Main Content */
 main {
   display: flex;
-  flex-direction: row; /* Side-by-side layout for main content */
+  flex-direction: row; 
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
   width: 90%;
   max-width: 1200px;
-  justify-content: space-between; /* Spread the heading and models apart */
 }
 
 h1 {
-  font-size: 4vw; /* Scales for smaller screens */
+  font-size: 4vw; 
   margin-bottom: 40px;
   text-align: left;
 }
 
-/* Ensure headings are in the same line */
+p {
+  font-family: 'TAN MERINGUE';
+  text-align: left;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 100%; 
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 40%;
+}
+
 .heading-container {
   display: flex;
-  flex-direction: row; /* Align headings side by side */
-  justify-content: center; /* Center the headings */
-  gap: 10px; /* Space between the headings */
-  margin-bottom: 10px; /* Add space below the headings */
+  flex-direction: row; 
+  gap: 10px; 
+  margin-bottom: 10px;
 }
 
 .models {
-  display: flex; /* Change to flex for row layout */
-  gap: 20px; /* Gap between each column */
-  width: 100%; /* Ensure the models take the full width available */
-  justify-content: space-between; /* Distribute models evenly */
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px;
+  width: 55%;
+  justify-content: space-between;
 }
 
 .model {
-  width: 22%; /* Set each column to take 22% of the container's width */
+  width: 22%; 
   height: auto;
   aspect-ratio: 2 / 3;
   border: 2px solid #ffffff;
@@ -118,28 +125,12 @@ h1 {
 }
 
 .animation p {
-  font-size: 1vw; /* Scales for smaller screens */
+  font-size: 1vw;
   margin: 10px 0;
   text-align: center;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) { /* For tablets */
-  h1 {
-    font-size: 4vw;
-  }
-
-  .nav-button {
-    font-size: 14px;
-    padding: 8px 16px;
-  }
-
-  .animation p {
-    font-size: 3vw;
-  }
-}
-
-@media (max-width: 480px) { /* For mobile phones */
+@media (max-width: 480px) { 
   h1 {
     font-size: 10vw;
   }
@@ -155,10 +146,72 @@ h1 {
 
   .models {
     gap: 15px;
-    width: 100%; /* Models take full width on small screens */
+    width: 100%;
   }
 
   .model {
-    width: 45%; /* Models take up more space on mobile */
+    width: 45%; 
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .content-container, .models {
+    width: 100%;
+  }
+}
+
+.models {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px;
+  flex: 1; 
+  justify-content: space-between;
+}
+
+.model {
+  width: 22%;
+  aspect-ratio: 2 / 3;
+  border: 2px solid #ffffff;
+  background-color: #553926;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.model:hover {
+  transform: scale(1.1);
+}
+
+.animation img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-container, .models {
+    width: 100%;
+    max-width: none;
+  }
+
+  .model {
+    width: 45%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .model {
+    width: 90%;
   }
 }

@@ -6,7 +6,7 @@
 
 body{
     overflow: hidden;
-    background-color: #795741;
+    background: url(images/im_background.png);
 }
 
 header {
@@ -96,7 +96,6 @@ header {
     left: calc(50% + 440px);
 }
 
-/* here n = 0, 1, 2, 3,... */
 .slide .item:nth-child(n + 6){
     left: calc(50% + 660px);
     opacity: 0;
@@ -123,11 +122,16 @@ header {
 
 
 .content .name{
-    font-size: 40px;
-    text-transform: uppercase;
+    font-size: 38px;
+    font-family: AstonScript;
     font-weight: bold;
     opacity: 0;
     animation: animate 1s ease-in-out 1 forwards;
+}
+
+p{
+    font-size:18px;
+    font-family: 'TAN MERINGUE';
 }
 
 .content{
