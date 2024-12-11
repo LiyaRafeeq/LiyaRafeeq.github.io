@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile - LIYA RAFEEQ</title>
     <link rel="stylesheet" href="profile_style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body background="images/im_background.png">
     <div class="container">
 
         <header>
-        <button class="nav-button" onclick="navigate('https://liyarafeeq.github.io/personalportfolio/')">HOME</button>
+        <button class="nav-button" onclick="navigate('index.html')">HOME</button>
+        <script>
+            function navigate(url) {
+                window.location.href = url;
+            }
+        </script>
         </header>
 
 <h1 style="font-family: 'TAN MERINGUE'"> LIYA RAFEEQ </h1>
@@ -36,6 +42,8 @@
           </p>
         </section>
 
+        
+        <section class="tech-skills">
         <div class="skill-box">
             
             <h2>Skills</h2>
@@ -99,18 +107,40 @@
                 <span class="percent"> 95% </span>
                 <span class="bar bar-10"> </span>
             </div>
-
         </div>
+        </section>
 
         <section class="languages">
             <h2>Languages</h2>
-            <p> 
-              English <br>
-              Malayalam <br>
-              Arabic <br>
-              Hindi <br>
-              French <br>
-            </p>
+        
+        <div class="skill-box">
+
+              <div class="single-skill">
+                <span class="topic"> English </span>
+                <span class="percent"> 99% </span>
+                <span class="bar bar-10"> </span>
+               </div>
+               <div class="single-skill">
+                <span class="topic"> Malayalam </span>
+                <span class="percent"> 98% </span>
+                <span class="bar bar-10"> </span>
+               </div>
+               <div class="single-skill">
+                <span class="topic"> Hindi </span>
+                <span class="percent"> 80% </span>
+                <span class="bar bar-10"> </span>
+               </div>
+               <div class="single-skill">
+                <span class="topic"> Arabic </span>
+                <span class="percent"> 75% </span>
+                <span class="bar bar-10"> </span>
+               </div>
+               <div class="single-skill">
+                <span class="topic"> Korean </span>
+                <span class="percent"> 25% </span>
+                <span class="bar bar-10"> </span>
+               </div>
+            
         </section>
 
         <section class="experiences">
@@ -124,7 +154,9 @@
         <section class="contact">
             <h2>Contact</h2>
             <div class="image-box"></div>
-            <p>Contact details go here.</p>
+            <p>Phone Number : +971 54 360 9516</p>
+            <p>Email: liyarafeeq2006@gmail.com</p>
+            <p>LinkedIn: Liya Rafeeq</p>
         </section>
     </div>
 </body>

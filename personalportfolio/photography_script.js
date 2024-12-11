@@ -1,3 +1,7 @@
+function navigate(url) {
+    window.location.href = url;
+}
+
 let next = document.querySelector('.next')
 let prev = document.querySelector('.prev')
 

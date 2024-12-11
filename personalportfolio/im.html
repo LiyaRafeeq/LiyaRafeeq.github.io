@@ -9,8 +9,13 @@
 </head>
 <body background="images/im_background.png">
   <header>
-    <button class="nav-button" onclick="navigate('https://liyarafeeq.github.io/personalportfolio/')">HOME</button>
-    <button class="nav-button" onclick="navigate('https://liyarafeeq.github.io/personalportfolio/profile.html')">PROFILE</button>
+    <button class="nav-button" onclick="navigate('index.html')">HOME</button>
+    <button class="nav-button" onclick="navigate('profile.html')">PROFILE</button>
+    <script>
+      function navigate(url) {
+          window.location.href = url;
+      }
+    </script>
   </header>
   <div class="image-container">
     <img src="images/bag.png" id="mainImage" alt="Bag" class="main-image">
